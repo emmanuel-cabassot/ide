@@ -1,0 +1,333 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 15px 0;
+    background-color: rgb(180, 7, 180);
+    font-size: 1.2em;
+}
+
+header a{
+    text-decoration: none;
+    color: rgb(228, 224, 224);
+}
+
+header :hover{
+    transform: scale(1.05);
+}
+
+header div{
+    padding: 10px 20px 10px 20px;
+}
+
+.headerlogo img{
+    width: 30px;
+    float: right;
+    margin-top: -5px;
+}
+
+.logo{
+    border: 1px solid rgb(228, 224, 224);
+    border-radius: 12px;
+    margin: 2px 4px 7px 4px;
+    background-color: rgb(44, 179, 212);
+    animation: develop 12s;
+    z-index: 9999;
+}
+
+.logosublime{
+    animation: sublime 12s;
+    z-index: 2;
+}
+
+.headernav{
+    display: flex;
+    align-items: center;
+    vertical-align: sub;
+}
+
+.headernav img{
+    width: 30px;
+   float: left;
+   margin-top: -5px;
+}
+
+.logovisual{
+    animation: visual 12s;
+    z-index: 3;
+}
+
+.logognu{
+    animation: gnu 12s;
+    z-index: 4;
+}
+.logognu img, .logovisual img{
+    padding-right: 4px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(245, 241, 241);
+}
+.presentation{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+    border: 1px solid grey;
+    padding: 0 20px 20px 20px;
+    border-radius: 25px;
+    background-color: white;
+    margin-bottom: 80px;
+    box-shadow: 5px 5px 3px gray;
+    animation: encadre 4s;
+    animation-fill-mode: both;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.definition{
+    width: 100%;
+    text-align: justify;
+    
+}
+
+.definition h1{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.definition p{
+    color: grey;
+    font-size: 1.2em;
+    margin-top: 10px;
+    line-height: 1.2em;
+}
+
+.articledroite{
+    width: 100%;
+}
+
+.presentation img{
+    width: 100%;
+}
+
+.chouchou{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 15px 20px 30px 20px;
+    box-shadow: 5px 5px 3px gray;
+    animation: encadreide 4s;
+    animation-fill-mode: both;
+    margin-bottom: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.presentation-chouchou{
+    width: 100%;
+    text-align: justify;
+}
+
+.presentation-chouchou h1{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.presentation-chouchou p{
+    color: grey;
+    font-size: 1.2em;
+    margin-top: 10px;
+    line-height: 1.2em;
+}
+
+.ide-chouchou{
+    display: flex;
+    width: 100%;  
+    justify-content: space-between;
+}
+
+.ide-chouchou img{
+    width: 30px;
+    float: left;
+    margin-top: -6px;
+    text-align: center;
+}  
+
+.gnu, .sublime, .visual{
+    width: 30%;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    border: 1px solid gray;
+    padding: 15px 5px 15px 5px;
+    border-radius: 10px;
+    background-color:  rgb(180, 7, 180);
+    padding: 15px 40px 25px 40px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.gnu p, .sublime p, .visual p{
+    font-size: 1.3em;
+    color:  black;
+}
+
+.chouchou-gnu a, .chouchou-sublime a, .chouchou-visual a{
+    text-decoration: none;
+    color:  rgb(228, 224, 224);
+    font-size: 1.2em;
+}
+
+.chouchou-gnu :hover, .chouchou-sublime :hover, .chouchou-visual :hover{
+    transform: scale(1.05);
+    color:  rgb(44, 179, 212);
+}
+
+.lien-article a{
+    font-size: 1.3em;
+    text-decoration: none;
+    color: rgb(44, 179, 212);
+    padding: 10px 50px 10px 50px ;
+    border: 2px solid rgb(44, 179, 212);
+    background-color: rgb(241, 245, 243);
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px rgb(44, 179, 212);
+    text-align: center;
+}
+
+.lien-article :hover{
+    background-color: rgb(44, 179, 212);
+    color: white;
+    transition-duration: .6s;
+}    
+
+.gnu img, .visual img{
+    padding-right: 4px;
+}
+
+address{
+    
+    color:  rgb(228, 224, 224);
+    font-size: 1.2em;
+    padding: 30px;
+    text-align: center;
+    background-color:  rgb(180, 7, 180);
+}
+
+@keyframes develop{
+    from{
+    transform: scale(1);
+    }
+    4%{
+     transform: scale(1.2);
+    }
+    9%{
+    transform: scale(1);
+    }
+    14%{
+    transform: scale(1.2);
+    }
+    19%{
+    transform: scale(1);
+    }
+    24%{
+    transform: scale(1.2);
+    }
+    29%{
+    transform: scale(1);
+    }
+    to{
+    transform: initial;
+    }
+    
+ }
+
+ @keyframes visual{
+    from{
+        transform: translateX(-1110px);
+        opacity: 0;
+ }
+     5%{
+        transform: translateX(-1110px);
+        opacity: 0;
+     }
+    5.1%{
+        transform: translateX(-1110px);
+        opacity: 1;
+    }
+    20%{
+        transform: translatex(0);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+ 
+
+@keyframes sublime{
+    from{
+        transform: translateX(-935px);
+        opacity: 0;
+ }
+     15%{
+        transform: translateX(-935px);
+        opacity: 0.0;
+     }
+    15.1%{
+        transform: translateX(-935px);
+        opacity: 1;
+    }
+    30%{
+        transform: translatex(0);
+    }
+    to{
+        transform: initial;
+    }
+}
+
+@keyframes gnu{
+    from{
+        transform: translateX(-815px);
+        opacity: 0;
+ }
+     25%{
+        transform: translateX(-815px);
+        opacity: 0.0;
+     }
+    25.1%{
+        transform: translateX(-815px);
+        opacity: 1;
+    }
+    38%{
+        transform: translatex(0);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
